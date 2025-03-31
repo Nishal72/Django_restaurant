@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1.0">
+        <title>KFC Menu</title>
+    </head>
+    <body>
+        <h1>Welcome to the KFC page</h1>
+
+        <h2>Menu</h2>
+        <ul>
+            {% for item in items %}
+                <li> {{ item.name }} - Rs {{ item.price }} - {{ item.description }}</li>
+            {% empty %}
+                <li>No menu items available</li>
+            {% endfor %}
+        </ul>
+    </body>
+
+</html>
