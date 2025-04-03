@@ -8,4 +8,4 @@ def home(request):
     return render(request, 'menu/home.html', {'items':Items})
 
 def about(request):
-    return HttpResponse("This is the about page.")
+    return HttpResponse("This is the about page.It contains the about.")
